@@ -1,0 +1,25 @@
+def two_monkeys(asmile, bsmile):
+    if asmile == bsmile:
+        return True
+    #    print("True")
+    else:
+        return False
+
+
+
+
+if __name__ == '__main__':
+    # These "asserts" using only for self-checking and not necessary for auto-testing
+
+    assert two_monkeys(True, True) == True, "First"
+    assert two_monkeys(False, False) == True, "Second"
+    assert two_monkeys(True, False) == False, "Third"
+    assert two_monkeys(False, True) == False, "Forth"
+
+    print("All set? Click \"Check\" to review your code and earn rewards!")
+
+
+    ######SUCESS!!!!#####
+
+# We have two monkeys, a and b, and the parameters asmile and bsmile indicate if each is smiling.
+# We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
